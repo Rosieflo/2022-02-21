@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+*{margin: 0px; padding: 0px;}
+ul, ol, li{list-style: none;}
+a{
+  color: #222328;
+  text-decoration: none;
+}
+body{
+  font-size: 12px;
+  font-family: '나눔 고딕', arial, sans-serif;
+  color: #222328;
+  background-color: #fff;
+  width: 1200px;
+  margin: 0px auto;
+}
+
+header{
+  position: relative;
+  height: 100px;
+}
+
+/* 내비게이션 영역 */
+.gnb{
+  position: absolute;
+    top: 60px;
+    right: 0px;
+  width: 680px;
+  height: 40px;
+  z-index: 1;
+}
+.gnb > ul{
+  display: flex;
+}
+.gnb > ul > li{
+  width: 175px;
+  text-align: center;
+  line-height: 40px;
+}
+.gnb > ul > li > a{
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: darkgoldenrod;
+  transition: 0.4s;
+}
+.gnb > ul > li > a:hover{
+  color:darkgoldenrod;
+  background-color:tan;
+}
+
+.sub{
+  display: none;
+}
+.sub > li{}
+.sub > li > a{
+  display: block;
+  color: #222328;
+  background-color: tan;
+}
+.sub > li > a:hover{
+  color: saddlebrown;
+  background-color: beige;
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: bisque;
+}
+
+/* 슬라이드 영역 */
+.slide{
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+}
+.s_wrap{
+  width: 1200px;
+  height: 900px;
+  /* display: flex; */
+}
+.s_wrap > li{
+  position: relative;
+  text-align: center;
+}
+.s_wrap > li > h3{
+  position: absolute;
+    left: 50%;
+    top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 15px 24px;
+  width: 280px;
+  background-color:rgba(184, 134, 11, .8);
+  
+}
+
+/* 공지사항,갤러리 영역 */
+.t_con{
+  width: 400px;
+  height: 200px;
+  background-color: rgb(144, 167, 104);
+}
+.t_con > ul{
+  position: relative;
+  height: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.t_con > ul > li{
+  float: left;
+}
+.t_con > ul > li > a{
+  padding: 4px 10px;
+  color: #fff;
+  background-color: darkgoldenrod;
+}
+.t_con > ul > li:last-child .con li{
+  display: inline;
+}
+
+.con{
+  position: absolute;
+    left: 0px;
+    bottom: 0px;
+  display: none;
+}
+.con > ul > li > img{width: 100px;}
+
+.act{
+  color: #222328 !important;
+  background-color: beige !important;
+}
+
+.banner{
+  width: 400px;
+  height: 200px;
+  background-color: rgb(178, 201, 138);
+}
+.icon{
+  width: 400px;
+  height: 200px;
+  background-color: rgb(198, 216, 167);
+}
+
+footer{
+  height: 100px;
+  background-color: aqua;
+}
